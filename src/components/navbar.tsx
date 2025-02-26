@@ -26,7 +26,7 @@ export function NavBar() {
         y && y > 20 ? 'py-4 glassmorphism shadow-sm' : 'py-6 bg-transparent border-none',
       )}
     >
-      <div className="container mx-auto flex items-center justify-between">
+      <div className="max-w-6xl mx-auto flex items-center justify-between">
         <div className="text-xl font-display font-semibold tracking-tight">
           <Logo />
         </div>
