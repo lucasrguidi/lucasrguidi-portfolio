@@ -59,7 +59,9 @@ export function AboutSection() {
                 src="/photo-placeholder.png"
                 alt="Your Name"
                 fill
+                sizes={'100%'}
                 className="rounded-lg shadow-xl"
+                priority
               />
             </div>
           </div>

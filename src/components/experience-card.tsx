@@ -43,7 +43,7 @@ export function ExperienceCard({
         </div>
         <p className="text-sm text-foreground leading-relaxed space-y-4">
           {descriptionParagraphs.map((paragraph, index) => (
-            <p key={index}>- {paragraph.trim()}</p>
+            <span key={index}>- {paragraph.trim()}</span>
           ))}
         </p>
       </div>

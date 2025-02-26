@@ -82,6 +82,8 @@ export function HeroSection() {
               alt="Your Name"
               className="w-full h-full object-cover rounded-full border-4 border-primary  shadow-lg"
               fill
+              sizes={'100%'}
+              priority
             />
             <motion.div
               className="absolute inset-0 rounded-full border-8 border-primary/30 "
