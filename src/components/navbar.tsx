@@ -27,9 +27,12 @@ export function NavBar() {
       )}
     >
       <div className="max-w-6xl mx-auto flex items-center justify-between">
-        <div className="text-xl font-display font-semibold tracking-tight">
+        <motion.div
+          className="text-xl font-display font-semibold tracking-tight"
+          whileHover={{ scale: 1.05 }}
+        >
           <Logo />
-        </div>
+        </motion.div>
 
         <div className="hidden md:flex items-center gap-4">
           {MENU_ITEMS.map((item) => (
