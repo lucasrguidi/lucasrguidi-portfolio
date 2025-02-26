@@ -56,4 +56,15 @@
   body {
     @apply bg-background text-foreground;
   }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply tracking-tight;
+  }
+  .glassmorphism {
+    @apply bg-background/40 backdrop-blur-lg border border-border/20;
+  }
 }
