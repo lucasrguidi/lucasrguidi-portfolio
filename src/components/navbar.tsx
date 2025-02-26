@@ -1,4 +1,5 @@
 'use client';
+import { autoScroll } from '@/app/utils/auto-scroll';
 import { cn } from '@/lib/utils';
 import { useWindowScroll } from '@uidotdev/usehooks';
 import { motion } from 'motion/react';
@@ -41,6 +42,7 @@ export function NavBar() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               variant={'ghost'}
+              onClick={(e) => autoScroll(e, item.id)}
             >
               {item.label}
             </MotionButton>

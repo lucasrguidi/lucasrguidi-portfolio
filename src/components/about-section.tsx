@@ -29,7 +29,7 @@ export function AboutSection() {
   return (
     <section
       id="about"
-      className="relative flex items-center justify-center overflow-hidden bg-background p-8 pt-0"
+      className="relative flex items-center justify-center overflow-hidden bg-background p-8 pt-0 py-16 md:py-24"
     >
       <div className="max-w-6xl relative w-full mx-auto flex flex-col justify-center items-center gap-8">
         <motion.div

@@ -1,4 +1,5 @@
 'use client';
+import { autoScroll } from '@/app/utils/auto-scroll';
 import { ArrowDown } from 'lucide-react';
 import { motion } from 'motion/react';
 import Image from 'next/image';
@@ -56,6 +57,7 @@ export function HeroSection() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6 }}
+            onClick={(e) => autoScroll(e, 'about')}
           >
             <span>Conheça Mais</span>
             <motion.div animate={{ y: [0, 5, 0] }} transition={{ repeat: Infinity, duration: 1.5 }}>
