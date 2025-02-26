@@ -33,15 +33,13 @@ export function AboutSection() {
     >
       <div className="max-w-6xl relative w-full mx-auto flex flex-col justify-center items-center gap-8">
         <motion.div
-          className="text-center max-w-3xl flex flex-col items-center justify-center"
+          className="text-center max-w-3xl flex flex-col gap-4 items-center justify-center"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-100px' }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-sm uppercase tracking-widest text-muted-foreground mb-3">
-            Sobre Mim
-          </h2>
+          <h2 className="text-sm uppercase tracking-widest text-muted-foreground">Sobre Mim</h2>
 
           <h3 className="text-3xl md:text-4xl font-bold text-foreground">
             Criatividade técnica para soluções que unem código e propósito
