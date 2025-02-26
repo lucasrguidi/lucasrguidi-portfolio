@@ -8,7 +8,7 @@ export function HeroSection() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background p-4"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background p-8 py-0"
     >
       <div className="max-w-6xl  w-full flex flex-col-reverse gap-8 md:flex-row md:items-center md:justify-between">
         <motion.div
