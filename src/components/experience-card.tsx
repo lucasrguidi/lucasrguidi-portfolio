@@ -16,6 +16,7 @@ export function ExperienceCard({
   isActive = false,
 }: ExperienceCardProps) {
   const descriptionParagraphs = description.split(';').filter((line) => line.trim() !== '');
+  console.log('🚀 ~ descriptionParagraphs:', descriptionParagraphs);
 
   return (
     <div
@@ -43,7 +44,9 @@ export function ExperienceCard({
         </div>
         <p className="text-sm text-foreground leading-relaxed space-y-4">
           {descriptionParagraphs.map((paragraph, index) => (
-            <span key={index}>- {paragraph.trim()}</span>
+            <span className="block" key={index}>
+              {paragraph.trim()}
+            </span>
           ))}
         </p>
       </div>
