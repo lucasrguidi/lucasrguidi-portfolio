@@ -35,7 +35,7 @@ export function HeroSection() {
             >
               Olá, eu sou o
               <br />
-              Lucas Guidi
+              Lucas Guidi 👋🏻
             </motion.h1>
           </div>
 

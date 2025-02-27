@@ -11,7 +11,6 @@ const MENU_ITEMS = [
   { id: 'about', label: 'Sobre mim' },
   { id: 'experience', label: 'Experiência' },
   { id: 'technologies', label: 'Tecnologias' },
-  { id: 'projects', label: 'Projetos' },
 ] as const;
 
 export function NavBar() {
@@ -56,5 +55,3 @@ export function NavBar() {
     </motion.nav>
   );
 }
-
-export default NavBar;

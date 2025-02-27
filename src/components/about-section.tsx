@@ -1,29 +1,9 @@
 'use client';
 
-import { Lightbulb, MessageSquareQuote, UserSearch } from 'lucide-react';
+import { autoScroll } from '@/app/utils/auto-scroll';
+
 import { motion } from 'motion/react';
 import Image from 'next/image';
-
-const QUALITIES = [
-  {
-    icon: <UserSearch className="size-5" />,
-    title: 'Foco no Usuário',
-    description:
-      'Interfaces intuitivas e acessíveis são prioridade, garantindo experiências que resolvem necessidades reais.',
-  },
-  {
-    icon: <MessageSquareQuote className="size-5" />,
-    title: 'Colaborativo',
-    description:
-      'Valorizo o trabalho em equipe, com comunicação clara e busca por resultados compartilhados.',
-  },
-  {
-    icon: <Lightbulb className="size-5" />,
-    title: 'Inovador',
-    description:
-      'Mantenho-me atualizado com as tendências do mercado, explorando ferramentas emergentes para soluções eficientes.',
-  },
-] as const;
 
 export function AboutSection() {
   return (
@@ -42,7 +22,7 @@ export function AboutSection() {
           <h2 className="text-sm uppercase tracking-widest text-muted-foreground">Sobre Mim</h2>
 
           <h3 className="text-3xl md:text-4xl font-bold text-foreground">
-            Criatividade técnica para soluções que unem código e propósito
+            Para me conhecer melhor
           </h3>
         </motion.div>
 
@@ -69,33 +49,28 @@ export function AboutSection() {
           <div className="w-full flex-1 flex flex-col justify-center gap-8 text-left">
             <div className="flex flex-col gap-4">
               <p className="text-primary leading-relaxed">
-                Sou desenvolvedor Fullstack com atuação profissional focada em Front-End, construo
-                aplicações web modernas com React, TypeScript e Next.js, integradas a APIs robustas
-                com Node.js e bancos de dados PostgreSQL via PrismaORM. Domino ferramentas como
-                TailwindCSS e bibliotecas headless como RadixUI para desenvolvimento ágil de
-                interfaces. Além disso, já trabalhei com Angular, PHP e Laravel em outros projetos
-                desafiadores.
+                Meu nome é Lucas Guidi, nasci e moro em Criciúma, Santa Catarina. Tenho 21 anos e,
+                no momento, estou na reta final para terminar a graduação em Engenharia de Software
+                na UniSATC.
               </p>
 
               <p className="text-primary leading-relaxed">
-                Atualmente, estou no penúltimo período do Bacharelado em Engenharia de Software na
-                UniSATC, aliando teoria acadêmica à prática do mercado para desenvolver soluções
-                escaláveis e eficientes.
+                Sou desenvolvedor full-stack com quase 3 anos de experiência e atualmente atuo na
+                empresa eTopocart, com foco no frontend. Trabalho diariamente com tecnologias como
+                JavaScript/TypeScript, React, Next.js, TailwindCSS e{' '}
+                <button onClick={(e) => autoScroll(e, 'technologies')} className="underline">
+                  diversas outras.
+                </button>{' '}
+                Meu objetivo é criar soluções e experiências que transformem o dia a dia das
+                pessoas, desenvolvendo ferramentas que simplificam processos complexos, buscando ser
+                a ponte entre inovação tecnológica e necessidades reais.
               </p>
-            </div>
 
-            <div className="flex flex-col gap-4">
-              {QUALITIES.map((quality, index) => (
-                <div key={index} className="flex items-start">
-                  <div className="flex-shrink-0 mr-4 mt-1 p-2 rounded-full bg-secondary text-primary">
-                    {quality.icon}
-                  </div>
-                  <div>
-                    <h4 className="font-medium text-foreground">{quality.title}</h4>
-                    <p className="text-sm text-foreground">{quality.description}</p>
-                  </div>
-                </div>
-              ))}
+              <p className="text-primary leading-relaxed">
+                Minha paixão desde pequeno por novas tecnologias me fez optar por essa área que une
+                inovação e resolução de problemas, habilidades que aplico diariamente tanto na vida
+                acadêmica quanto na profissional.
+              </p>
             </div>
           </div>
         </motion.div>
