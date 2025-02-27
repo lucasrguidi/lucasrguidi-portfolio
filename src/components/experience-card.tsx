@@ -16,7 +16,6 @@ export function ExperienceCard({
   isActive = false,
 }: ExperienceCardProps) {
   const descriptionParagraphs = description.split(';').filter((line) => line.trim() !== '');
-  console.log('🚀 ~ descriptionParagraphs:', descriptionParagraphs);
 
   return (
     <div
